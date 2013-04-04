@@ -30,12 +30,20 @@ void GSSClient::run()
     request->setRequestType(CCHttpRequest::kHttpGet);
     request->setResponseCallback(this, callfuncND_selector(GSSClient::onHttpRequestCompleted));
     request->setTag("GET test1");
+
+    printf("now sending a request\n");
+    
     CCHttpClient::getInstance()->send(request);
+    
+    printf("now sent a request\n");
+    
     request->release();
 };
 
 void GSSClient::onHttpRequestCompleted(cocos2d::CCNode *sender, void *data)
 {
+    printf("onHttpRequestCompleted called!\n");
+    
     CCHttpResponse *response = (CCHttpResponse*)data;
     
     // dump data
