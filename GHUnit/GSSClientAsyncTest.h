@@ -9,5 +9,5 @@
 #import <GHUnitIOS/GHUnit.h>
 
 @interface GSSClientAsyncTest : GHAsyncTestCase
-
+    - (void)_succeed;
 @end

@@ -8,16 +8,51 @@
 
 #import "GSSClientAsyncTest.h"
 
+#include "GSSClient.h"
+
+
+class TestGSSClient : public GSSClient
+{
+    private:
+    GSSClientAsyncTest* fTest;
+    
+    public:
+    TestGSSClient(GSSClientAsyncTest* test);
+    
+    virtual void afterHttpRequestCompleted(std::vector<char>* buffer);
+};
+
+TestGSSClient::TestGSSClient(GSSClientAsyncTest* test){
+    fTest = test;
+}
+
+
+void TestGSSClient::afterHttpRequestCompleted(std::vector<char>* buffer)
+{
+    [fTest _succeed];    
+}
+
+
+
+
+
+
+
 @implementation GSSClientAsyncTest
 - (void)testSuccess {
     // Prepare for asynchronous call
     [self prepare];
     
     // Do asynchronous task here
-    [self performSelector:@selector(_succeed) withObject:nil afterDelay:0.1];
-    
+    [self performSelector:@selector(_start) withObject:nil afterDelay:0.1];
+
     // Wait for notify
-    [self waitForStatus:kGHUnitWaitStatusSuccess timeout:1.0];
+    [self waitForStatus:kGHUnitWaitStatusSuccess timeout:5.0];
+}
+
+- (void)_start {
+    TestGSSClient* client = new TestGSSClient(self);
+    client->run();
 }
 
 - (void)_succeed {
