@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6739F606170D818D00F19E0E /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6767752A170D7474008ECBE1 /* OpenAL.framework */; };
+		6739F607170D818D00F19E0E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67677528170D7474008ECBE1 /* OpenGLES.framework */; };
+		6739F608170D819C00F19E0E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6767752C170D7474008ECBE1 /* AudioToolbox.framework */; };
+		6739F609170D81A400F19E0E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6767752E170D7474008ECBE1 /* AVFoundation.framework */; };
+		6739F60A170D81E200F19E0E /* libwebp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6767769A170D7477008ECBE1 /* libwebp.a */; };
+		6739F60B170D81E200F19E0E /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67677698170D7477008ECBE1 /* libcurl.a */; };
 		67677527170D7474008ECBE1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67677526170D7474008ECBE1 /* QuartzCore.framework */; };
 		67677529170D7474008ECBE1 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67677528170D7474008ECBE1 /* OpenGLES.framework */; };
 		6767752B170D7474008ECBE1 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6767752A170D7474008ECBE1 /* OpenAL.framework */; };
@@ -220,6 +226,13 @@
 		67677801170D7478008ECBE1 /* cocos2dx-ext_public.defines.txt in Resources */ = {isa = PBXBuildFile; fileRef = 67677800170D7478008ECBE1 /* cocos2dx-ext_public.defines.txt */; };
 		67677807170D7478008ECBE1 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67677806170D7478008ECBE1 /* AppDelegate.cpp */; };
 		6767780A170D7478008ECBE1 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67677809170D7478008ECBE1 /* HelloWorldScene.cpp */; };
+		67677816170D7602008ECBE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67677530170D7474008ECBE1 /* UIKit.framework */; };
+		67677817170D7602008ECBE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67677532170D7474008ECBE1 /* Foundation.framework */; };
+		67677818170D7602008ECBE1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67677534170D7474008ECBE1 /* CoreGraphics.framework */; };
+		6767781E170D7603008ECBE1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6767781C170D7603008ECBE1 /* InfoPlist.strings */; };
+		67677820170D7603008ECBE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6767781F170D7603008ECBE1 /* main.m */; };
+		67677829170D762D008ECBE1 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67677828170D762D008ECBE1 /* GHUnitIOS.framework */; };
+		6767782A170D777B008ECBE1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67677526170D7474008ECBE1 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -690,6 +703,12 @@
 		67677806170D7478008ECBE1 /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		67677808170D7478008ECBE1 /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		67677809170D7478008ECBE1 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
+		67677814170D7602008ECBE1 /* GHUnit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHUnit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6767781B170D7602008ECBE1 /* GHUnit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GHUnit-Info.plist"; sourceTree = "<group>"; };
+		6767781D170D7603008ECBE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6767781F170D7603008ECBE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		67677821170D7603008ECBE1 /* GHUnit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GHUnit-Prefix.pch"; sourceTree = "<group>"; };
+		67677828170D762D008ECBE1 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GHUnitIOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -710,6 +729,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		67677811170D7602008ECBE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6739F60A170D81E200F19E0E /* libwebp.a in Frameworks */,
+				6739F60B170D81E200F19E0E /* libcurl.a in Frameworks */,
+				6739F609170D81A400F19E0E /* AVFoundation.framework in Frameworks */,
+				6739F608170D819C00F19E0E /* AudioToolbox.framework in Frameworks */,
+				6739F606170D818D00F19E0E /* OpenAL.framework in Frameworks */,
+				6739F607170D818D00F19E0E /* OpenGLES.framework in Frameworks */,
+				67677829170D762D008ECBE1 /* GHUnitIOS.framework in Frameworks */,
+				6767782A170D777B008ECBE1 /* QuartzCore.framework in Frameworks */,
+				67677816170D7602008ECBE1 /* UIKit.framework in Frameworks */,
+				67677817170D7602008ECBE1 /* Foundation.framework in Frameworks */,
+				67677818170D7602008ECBE1 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -717,6 +754,7 @@
 			isa = PBXGroup;
 			children = (
 				67677536170D7474008ECBE1 /* cocos2dx-ios */,
+				67677819170D7602008ECBE1 /* GHUnit */,
 				67677525170D7474008ECBE1 /* Frameworks */,
 				67677523170D7474008ECBE1 /* Products */,
 			);
@@ -726,6 +764,7 @@
 			isa = PBXGroup;
 			children = (
 				67677522170D7474008ECBE1 /* cocos2dx-ios.app */,
+				67677814170D7602008ECBE1 /* GHUnit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -733,7 +772,7 @@
 		67677525170D7474008ECBE1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				67677526170D7474008ECBE1 /* QuartzCore.framework */,
+				67677828170D762D008ECBE1 /* GHUnitIOS.framework */,
 				67677528170D7474008ECBE1 /* OpenGLES.framework */,
 				6767752A170D7474008ECBE1 /* OpenAL.framework */,
 				6767752C170D7474008ECBE1 /* AudioToolbox.framework */,
@@ -741,6 +780,7 @@
 				67677530170D7474008ECBE1 /* UIKit.framework */,
 				67677532170D7474008ECBE1 /* Foundation.framework */,
 				67677534170D7474008ECBE1 /* CoreGraphics.framework */,
+				67677526170D7474008ECBE1 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1698,6 +1738,25 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
+		67677819170D7602008ECBE1 /* GHUnit */ = {
+			isa = PBXGroup;
+			children = (
+				6767781A170D7602008ECBE1 /* Supporting Files */,
+			);
+			path = GHUnit;
+			sourceTree = "<group>";
+		};
+		6767781A170D7602008ECBE1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6767781B170D7602008ECBE1 /* GHUnit-Info.plist */,
+				6767781C170D7603008ECBE1 /* InfoPlist.strings */,
+				6767781F170D7603008ECBE1 /* main.m */,
+				67677821170D7603008ECBE1 /* GHUnit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1716,6 +1775,23 @@
 			name = "cocos2dx-ios";
 			productName = "cocos2dx-ios";
 			productReference = 67677522170D7474008ECBE1 /* cocos2dx-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		67677813170D7602008ECBE1 /* GHUnit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67677825170D7603008ECBE1 /* Build configuration list for PBXNativeTarget "GHUnit" */;
+			buildPhases = (
+				67677810170D7602008ECBE1 /* Sources */,
+				67677811170D7602008ECBE1 /* Frameworks */,
+				67677812170D7602008ECBE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GHUnit;
+			productName = GHUnit;
+			productReference = 67677814170D7602008ECBE1 /* GHUnit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1739,6 +1815,7 @@
 			projectRoot = "";
 			targets = (
 				67677521170D7474008ECBE1 /* cocos2dx-ios */,
+				67677813170D7602008ECBE1 /* GHUnit */,
 			);
 		};
 /* End PBXProject section */
@@ -1763,6 +1840,14 @@
 				67677753170D7478008ECBE1 /* project.pbxproj in Resources */,
 				676777FF170D7478008ECBE1 /* cocos2dx-ext.mkf in Resources */,
 				67677801170D7478008ECBE1 /* cocos2dx-ext_public.defines.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67677812170D7602008ECBE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6767781E170D7603008ECBE1 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1964,7 +2049,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		67677810170D7602008ECBE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67677820170D7603008ECBE1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6767781C170D7603008ECBE1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6767781D170D7603008ECBE1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6767780B170D7478008ECBE1 /* Debug */ = {
@@ -2075,6 +2179,62 @@
 			};
 			name = Release;
 		};
+		67677826170D7603008ECBE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GHUnit/GHUnit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "GHUnit/GHUnit-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/cocos2dx-ios/libs/cocos2dx/platform/third_party/ios/libraries\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		67677827170D7603008ECBE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GHUnit/GHUnit-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "GHUnit/GHUnit-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/cocos2dx-ios/libs/cocos2dx/platform/third_party/ios/libraries\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2094,6 +2254,16 @@
 				6767780F170D7478008ECBE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67677825170D7603008ECBE1 /* Build configuration list for PBXNativeTarget "GHUnit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67677826170D7603008ECBE1 /* Debug */,
+				67677827170D7603008ECBE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
