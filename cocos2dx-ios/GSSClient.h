@@ -22,6 +22,7 @@ public:
     
     void onHttpRequestCompleted(cocos2d::CCNode *sender, void *data);
     
+    virtual void afterHttpRequestCompleted(std::vector<char>* buffer);
 };
 
 

@@ -47,4 +47,11 @@ void GSSClient::onHttpRequestCompleted(cocos2d::CCNode *sender, void *data)
     }
     printf("\n");
     
+    afterHttpRequestCompleted(buffer);    
 };
+
+
+void GSSClient::afterHttpRequestCompleted(std::vector<char>* buffer)
+{
+    
+}
