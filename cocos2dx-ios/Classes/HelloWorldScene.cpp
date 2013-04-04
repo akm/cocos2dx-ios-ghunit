@@ -1,6 +1,8 @@
 #include "HelloWorldScene.h"
 #include "SimpleAudioEngine.h"
 
+#include "GSSClient.h"
+
 using namespace cocos2d;
 using namespace CocosDenshion;
 
@@ -70,6 +72,9 @@ bool HelloWorld::init()
 
     // add the sprite as a child to this layer
     this->addChild(pSprite, 0);
+    
+    GSSClient* client = new GSSClient();
+    client->run();
     
     return true;
 }
