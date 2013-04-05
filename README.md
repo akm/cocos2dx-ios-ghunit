@@ -1,4 +1,3 @@
-
 # Coco2d-x example with GHUnit for iOS
 
 ## setup
@@ -41,5 +40,5 @@ If it succeed, you can see messages in Debug Area:
 
 Now GHUnit always fails.
 
-It seems not to be called callback for response. Please help me....
+It seems not to call callback for response. Please help me....
 
