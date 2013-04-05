@@ -2533,12 +2533,19 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cocos2dx-ios/Prefix.pch";
-				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"SERVER_URL=\\\"http://192.168.1.106:9876\\\"",
 					DEBUG,
 					"COCOS2D_DEBUG=1",
 					USE_FILE32API,
 					CC_TARGET_OS_IPHONE,
-					CC_ASYNC_HTTPREQUEST_USE_NAMED_SEMAPHORE,
+				);
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					"SERVER_URL=\\\"http://192.168.1.106:9876\\\"",
+					DEBUG,
+					"COCOS2D_DEBUG=1",
+					USE_FILE32API,
+					CC_TARGET_OS_IPHONE,
 				);
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = "cocos2dx-ios/Resources/Info.plist";
@@ -2594,7 +2601,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GHUnit/GHUnit-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"CC_ASYNC_HTTPREQUEST_USE_NAMED_SEMAPHORE=1",
+					"SERVER_URL=http://192.168.1.106:9876",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					"SERVER_URL=http://192.168.1.106:9876",
 					"DEBUG=1",
 					"$(inherited)",
 				);

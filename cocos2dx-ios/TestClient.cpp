@@ -13,6 +13,10 @@
 using namespace cocos2d;
 using namespace cocos2d::extension;
 
+#ifndef SERVER_URL
+#error add a macro named SERVER_URL with espaced quotation like this: SERVER_URL=\"http://192.168.1.106:9876\"
+#endif
+
 
 TestClient::TestClient()
 {
@@ -25,7 +29,11 @@ TestClient::~TestClient()
 void TestClient::run()
 {
     CCHttpRequest* request = new CCHttpRequest();
-    request->setUrl("http://192.168.1.106:9876"); // TODO change this to your IP
+    // request->setUrl("http://192.168.1.106:9876"); // TODO change this to your IP
+    printf("SERVER_URL_STR: ");
+    printf(SERVER_URL);
+    printf("\n");
+    request->setUrl(SERVER_URL); // TODO change this to your IP
     
     request->setRequestType(CCHttpRequest::kHttpGet);
     request->setResponseCallback(this, callfuncND_selector(TestClient::onHttpRequestCompleted));
