@@ -10,6 +10,7 @@
 
 #include "TestClient.h"
 
+#import "cocos2d.h"
 
 class TestTestClient : public TestClient
 {
@@ -39,13 +40,38 @@ void TestTestClient::afterHttpRequestCompleted(std::vector<char>* buffer)
 
 
 @implementation TestClientAsyncTest
+
+// Override
+-(void)setUp{
+    [super setUp];
+    
+    scheduleTimer_ = [NSTimer scheduledTimerWithTimeInterval:0.1
+                                                      target:self
+                                                    selector:@selector(updateScheduler)
+                                                    userInfo:nil
+                                                     repeats:YES];
+}
+
+// Override
+-(void)tearDown{
+    [super tearDown];
+    [scheduleTimer_ invalidate];
+}
+
+// timer
+- (void)updateScheduler{
+    cocos2d::CCDirector::sharedDirector()->getScheduler()->update(0.1);
+}
+
+
+
 - (void)testSuccess {
     // Prepare for asynchronous call
     [self prepare];
     
     // Do asynchronous task here
     [self performSelector:@selector(_start) withObject:nil afterDelay:0.1];
-
+    
     // Wait for notify
     [self waitForStatus:kGHUnitWaitStatusSuccess timeout:5.0];
 }
