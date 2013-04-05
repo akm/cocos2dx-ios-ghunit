@@ -47,10 +47,3 @@ If it succeed, you can see messages like shown below in Debug Area:
 
     Http Test, dump data: Hello. The time is 2013-04-05 12:36:08 +0900
 
-
-## Help!
-
-Now GHUnit always fails.
-
-It seems not to call callback for response. Please help me....
-
