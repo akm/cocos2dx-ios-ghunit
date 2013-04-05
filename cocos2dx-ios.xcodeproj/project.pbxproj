@@ -195,7 +195,7 @@
 		67218565170D95140019518A /* vec4.c in Sources */ = {isa = PBXBuildFile; fileRef = 67677602170D7476008ECBE1 /* vec4.c */; };
 		67218566170D95140019518A /* mat4stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 676775EC170D7475008ECBE1 /* mat4stack.c */; };
 		67218567170D95140019518A /* matrix.c in Sources */ = {isa = PBXBuildFile; fileRef = 676775EE170D7475008ECBE1 /* matrix.c */; };
-		6721856F170D9CC60019518A /* GSSClientAsyncTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6721856E170D9CC60019518A /* GSSClientAsyncTest.mm */; };
+		6721856F170D9CC60019518A /* TestClientAsyncTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6721856E170D9CC60019518A /* TestClientAsyncTest.mm */; };
 		6739F606170D818D00F19E0E /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6767752A170D7474008ECBE1 /* OpenAL.framework */; };
 		6739F607170D818D00F19E0E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67677528170D7474008ECBE1 /* OpenGLES.framework */; };
 		6739F608170D819C00F19E0E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6767752C170D7474008ECBE1 /* AudioToolbox.framework */; };
@@ -422,14 +422,14 @@
 		67677820170D7603008ECBE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6767781F170D7603008ECBE1 /* main.m */; };
 		67677829170D762D008ECBE1 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67677828170D762D008ECBE1 /* GHUnitIOS.framework */; };
 		6767782A170D777B008ECBE1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67677526170D7474008ECBE1 /* QuartzCore.framework */; };
-		67EE7716170D85920033905D /* GSSClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67EE7715170D85920033905D /* GSSClient.cpp */; };
-		67EE7717170D85920033905D /* GSSClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67EE7715170D85920033905D /* GSSClient.cpp */; };
+		67EE7716170D85920033905D /* TestClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67EE7715170D85920033905D /* TestClient.cpp */; };
+		67EE7717170D85920033905D /* TestClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67EE7715170D85920033905D /* TestClient.cpp */; };
 		67EE7719170D881C0033905D /* server.rb in Resources */ = {isa = PBXBuildFile; fileRef = 67EE7718170D881C0033905D /* server.rb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6721856D170D9CC60019518A /* GSSClientAsyncTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSSClientAsyncTest.h; sourceTree = "<group>"; };
-		6721856E170D9CC60019518A /* GSSClientAsyncTest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GSSClientAsyncTest.mm; sourceTree = "<group>"; };
+		6721856D170D9CC60019518A /* TestClientAsyncTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClientAsyncTest.h; sourceTree = "<group>"; };
+		6721856E170D9CC60019518A /* TestClientAsyncTest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestClientAsyncTest.mm; sourceTree = "<group>"; };
 		67677522170D7474008ECBE1 /* cocos2dx-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cocos2dx-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67677526170D7474008ECBE1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		67677528170D7474008ECBE1 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -903,8 +903,8 @@
 		6767781F170D7603008ECBE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		67677821170D7603008ECBE1 /* GHUnit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GHUnit-Prefix.pch"; sourceTree = "<group>"; };
 		67677828170D762D008ECBE1 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GHUnitIOS.framework; sourceTree = "<group>"; };
-		67EE7713170D85840033905D /* GSSClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSSClient.h; sourceTree = "<group>"; };
-		67EE7715170D85920033905D /* GSSClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GSSClient.cpp; sourceTree = "<group>"; };
+		67EE7713170D85840033905D /* TestClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClient.h; sourceTree = "<group>"; };
+		67EE7715170D85920033905D /* TestClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestClient.cpp; sourceTree = "<group>"; };
 		67EE7718170D881C0033905D /* server.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = server.rb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1929,8 +1929,8 @@
 			children = (
 				67677805170D7478008ECBE1 /* AppDelegate.h */,
 				67677806170D7478008ECBE1 /* AppDelegate.cpp */,
-				67EE7713170D85840033905D /* GSSClient.h */,
-				67EE7715170D85920033905D /* GSSClient.cpp */,
+				67EE7713170D85840033905D /* TestClient.h */,
+				67EE7715170D85920033905D /* TestClient.cpp */,
 				67677808170D7478008ECBE1 /* HelloWorldScene.h */,
 				67677809170D7478008ECBE1 /* HelloWorldScene.cpp */,
 			);
@@ -1942,8 +1942,8 @@
 			children = (
 				6767781A170D7602008ECBE1 /* Supporting Files */,
 				67EE7718170D881C0033905D /* server.rb */,
-				6721856D170D9CC60019518A /* GSSClientAsyncTest.h */,
-				6721856E170D9CC60019518A /* GSSClientAsyncTest.mm */,
+				6721856D170D9CC60019518A /* TestClientAsyncTest.h */,
+				6721856E170D9CC60019518A /* TestClientAsyncTest.mm */,
 			);
 			path = GHUnit;
 			sourceTree = "<group>";
@@ -2249,7 +2249,7 @@
 				676777FB170D7478008ECBE1 /* CCPhysicsSprite.cpp in Sources */,
 				67677807170D7478008ECBE1 /* AppDelegate.cpp in Sources */,
 				6767780A170D7478008ECBE1 /* HelloWorldScene.cpp in Sources */,
-				67EE7716170D85920033905D /* GSSClient.cpp in Sources */,
+				67EE7716170D85920033905D /* TestClient.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2446,8 +2446,8 @@
 				672184AD170D922A0019518A /* CCObject.cpp in Sources */,
 				672184AC170D92140019518A /* CCPointExtension.cpp in Sources */,
 				67677820170D7603008ECBE1 /* main.m in Sources */,
-				67EE7717170D85920033905D /* GSSClient.cpp in Sources */,
-				6721856F170D9CC60019518A /* GSSClientAsyncTest.mm in Sources */,
+				67EE7717170D85920033905D /* TestClient.cpp in Sources */,
+				6721856F170D9CC60019518A /* TestClientAsyncTest.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2533,6 +2533,13 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cocos2dx-ios/Prefix.pch";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					DEBUG,
+					"COCOS2D_DEBUG=1",
+					USE_FILE32API,
+					CC_TARGET_OS_IPHONE,
+					CC_ASYNC_HTTPREQUEST_USE_NAMED_SEMAPHORE,
+				);
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = "cocos2dx-ios/Resources/Info.plist";
 				LIBRARY_SEARCH_PATHS = (
@@ -2587,6 +2594,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GHUnit/GHUnit-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"CC_ASYNC_HTTPREQUEST_USE_NAMED_SEMAPHORE=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
@@ -2629,6 +2637,12 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GHUnit/GHUnit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"CC_ASYNC_HTTPREQUEST_USE_NAMED_SEMAPHORE=1",
+					NDEBUG,
+					USE_FILE32API,
+					CC_TARGET_OS_IPHONE,
+				);
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				HEADER_SEARCH_PATHS = (

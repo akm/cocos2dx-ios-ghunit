@@ -1,33 +1,33 @@
 //
-//  GSSClientAsyncTest.m
+//  TestClientAsyncTest.m
 //  cocos2dx-ios
 //
 //  Created by  on 13/04/04.
 //  Copyright (c) 2013 __MyCompanyName__. All rights reserved.
 //
 
-#import "GSSClientAsyncTest.h"
+#import "TestClientAsyncTest.h"
 
-#include "GSSClient.h"
+#include "TestClient.h"
 
 
-class TestGSSClient : public GSSClient
+class TestTestClient : public TestClient
 {
     private:
-    GSSClientAsyncTest* fTest;
+    TestClientAsyncTest* fTest;
     
     public:
-    TestGSSClient(GSSClientAsyncTest* test);
+    TestTestClient(TestClientAsyncTest* test);
     
     virtual void afterHttpRequestCompleted(std::vector<char>* buffer);
 };
 
-TestGSSClient::TestGSSClient(GSSClientAsyncTest* test){
+TestTestClient::TestTestClient(TestClientAsyncTest* test){
     fTest = test;
 }
 
 
-void TestGSSClient::afterHttpRequestCompleted(std::vector<char>* buffer)
+void TestTestClient::afterHttpRequestCompleted(std::vector<char>* buffer)
 {
     [fTest _succeed];    
 }
@@ -38,7 +38,7 @@ void TestGSSClient::afterHttpRequestCompleted(std::vector<char>* buffer)
 
 
 
-@implementation GSSClientAsyncTest
+@implementation TestClientAsyncTest
 - (void)testSuccess {
     // Prepare for asynchronous call
     [self prepare];
@@ -51,7 +51,7 @@ void TestGSSClient::afterHttpRequestCompleted(std::vector<char>* buffer)
 }
 
 - (void)_start {
-    TestGSSClient* client = new TestGSSClient(self);
+    TestTestClient* client = new TestTestClient(self);
     client->run();
 }
 

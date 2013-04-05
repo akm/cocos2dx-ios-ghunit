@@ -1,5 +1,5 @@
 //
-//  GSSClientAsyncTest.h
+//  TestClientAsyncTest.h
 //  cocos2dx-ios
 //
 //  Created by  on 13/04/04.
@@ -8,6 +8,6 @@
 
 #import <GHUnitIOS/GHUnit.h>
 
-@interface GSSClientAsyncTest : GHAsyncTestCase
+@interface TestClientAsyncTest : GHAsyncTestCase
     - (void)_succeed;
 @end
