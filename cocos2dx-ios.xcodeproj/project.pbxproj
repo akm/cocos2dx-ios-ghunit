@@ -2534,14 +2534,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cocos2dx-ios/Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"SERVER_URL=\\\"http://192.168.1.106:9876\\\"",
+					"SERVER_URL=\\\"${TEST_SERVER_URL}\\\"",
 					DEBUG,
 					"COCOS2D_DEBUG=1",
 					USE_FILE32API,
 					CC_TARGET_OS_IPHONE,
 				);
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
-					"SERVER_URL=\\\"http://192.168.1.106:9876\\\"",
+					"SERVER_URL=\\\"${TEST_SERVER_URL}\\\"",
 					DEBUG,
 					"COCOS2D_DEBUG=1",
 					USE_FILE32API,
@@ -2601,12 +2601,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GHUnit/GHUnit-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"SERVER_URL=http://192.168.1.106:9876",
+					"SERVER_URL=\\\"${TEST_SERVER_URL}\\\"",
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
-					"SERVER_URL=http://192.168.1.106:9876",
+					"SERVER_URL=\\\"${TEST_SERVER_URL}\\\"",
 					"DEBUG=1",
 					"$(inherited)",
 				);
