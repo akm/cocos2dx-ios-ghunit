@@ -8,6 +8,10 @@
 
 #import <GHUnitIOS/GHUnit.h>
 
-@interface TestClientAsyncTest : GHAsyncTestCase
-    - (void)_succeed;
+@interface TestClientAsyncTest : GHAsyncTestCase{
+@private
+    NSTimer *scheduleTimer_;
+}
+
+- (void)_succeed;
 @end
